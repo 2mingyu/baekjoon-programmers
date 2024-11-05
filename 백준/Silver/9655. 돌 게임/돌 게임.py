@@ -1,2 +1,1 @@
-N = int(input())
-print('SK' if N%2 else 'CY')
+print('SK'if int(input())%2else 'CY')
