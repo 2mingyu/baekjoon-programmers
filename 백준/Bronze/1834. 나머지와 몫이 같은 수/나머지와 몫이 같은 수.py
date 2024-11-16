@@ -1,5 +1,2 @@
-s = 0
 N = int(input())
-for i in range(N):
-    s += N*i + i
-print(s)
+print(sum([N*i+i for i in range(N)]))
