@@ -1,9 +1,9 @@
-N = input()
+N = int(input())
 F = int(input())
 
-for i in range(10):
-    for j in range(10):
-        t = int(N[:-2] + str(i) + str(j))
-        if t % F == 0:
-            print(str(i) + str(j))
-            exit()
+a = N // 100 * 100
+for i in range(100):
+    if a % F == 0:
+        break
+    a += 1
+print(str(a)[-2:])
