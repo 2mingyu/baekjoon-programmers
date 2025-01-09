@@ -1,2 +1,2 @@
 input()
-for c in input(): print('i' if c == 'I' else 'L', end='')
+for c in input():print('Li'[c=='I'],end='')
