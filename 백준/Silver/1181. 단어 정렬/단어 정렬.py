@@ -1,0 +1,5 @@
+n = int(input())
+l = list(set([input() for _ in range(n)]))
+l.sort()
+l.sort(key=len)
+for w in l: print(w)
