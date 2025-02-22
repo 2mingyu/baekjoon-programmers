@@ -1,10 +1,11 @@
 import sys
 input = sys.stdin.readline
 N = int(input())
-s = []
-for _ in range(N):
-    h = int(input())
-    while s and s[-1] <= h:
-        s.pop()
-    s.append(h)
-print(len(s))
+l = [int(input()) for _ in range(N)]
+m = 0
+r = 0
+for e in l[::-1]:
+    if m < e:
+        m = e
+        r += 1
+print(r)
