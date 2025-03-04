@@ -1,0 +1,1 @@
+print(['Yes', 'No'][bool(min(int(input()), 10**5)%2024)])
