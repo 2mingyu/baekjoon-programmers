@@ -1,0 +1,1 @@
+n,m,*s=map(int,open(0).read().split());print(min(-~(d*n//(u+d))*(u+d)-n*d for u,d in zip(s[::2],s[1::2])))
