@@ -1,0 +1,10 @@
+n = int(input())
+for _ in range(n):
+    a, b, c = map(int, input().split())
+    print(a, b, c)
+    d = sum([a<10, b<10, c<10])
+    if d == 3: print('zilch')
+    elif d == 2: print('double')
+    elif d == 1: print('double-double')
+    else: print('triple-double')
+    print()
