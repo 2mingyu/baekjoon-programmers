@@ -1,15 +1,27 @@
 N, M = map(int, input().split())
 S = input()
-O = A1 = A2 = -1
-for i in range(N-1, -1, -1):
-    if O == -1 and S[i] not in 'AEIOU':
-        O = i
-    elif A1 == -1 and S[i] == 'A':
-        A1 = i
-    elif A2 == -1 and S[i] == 'A':
-        A2 = i
-if O != -1 and A1 != -1 and A2 != -1 and A2+2 >= M:
+C = 0
+T = ''
+i = N-1
+while i >= 0:
+    if C == 0:
+        if S[i] not in 'AEIOU':
+            T += S[i]
+            C += 1
+    elif C == 1:
+        if S[i] == 'A':
+            T += S[i]
+            C += 1
+    elif C == 2:
+        if S[i] == 'A':
+            T += S[i]
+            C += 1
+    else:
+        T += S[i]
+    i -= 1
+if M <= len(T):
     print('YES')
-    print(S[M-A2-1:A2]+'AA'+S[O])
+    T = T[::-1]
+    print(T[len(T)-M:])
 else:
     print('NO')
