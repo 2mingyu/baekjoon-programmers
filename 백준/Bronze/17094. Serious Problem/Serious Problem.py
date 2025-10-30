@@ -1,0 +1,5 @@
+n = int(input())
+c = input().count('2')
+if c > n-c: print('2')
+elif c == n-c: print('yee')
+else: print('e')
