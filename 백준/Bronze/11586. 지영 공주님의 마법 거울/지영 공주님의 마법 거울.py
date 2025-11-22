@@ -6,4 +6,4 @@ if K == 1:
 elif K == 2:
     for e in M: print(e[::-1])
 else:
-    for i in range(N): print(M[N-1-i])
+    for e in M[::-1]: print(e)
