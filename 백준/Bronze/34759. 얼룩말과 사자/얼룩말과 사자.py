@@ -1,2 +1,1 @@
-N = int(input())
-print(N*2)
+print(int(input())*2)
