@@ -1,0 +1,5 @@
+A, B = map(int, input().split())
+C, D = map(int, input().split())
+if B+D > A+C: print('Hanyang Univ.')
+elif B+D == A+C: print('Either')
+else: print('Yongdap')
