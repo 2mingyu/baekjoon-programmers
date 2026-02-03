@@ -1,0 +1,1 @@
+for _ in range(int(input())):K=int(input().split()[1]);print(sum([int(e)//K for e in input().split()]))
